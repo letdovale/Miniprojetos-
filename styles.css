@@ -1,0 +1,173 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#img img {
+    width: 32rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color:#fff; 
+    background-color:rgb(15, 15, 63);
+    border-radius: 8px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 2rem;
+    position: relative;
+}
+
+#title::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+
+}
+
+.input-box label {
+    font-size: 1.1rem;
+    font-weight:500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #69ABC7;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top:0.5rem;
+}
+
+.input-field span, 
+.input-field i {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0 0.3rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline:none;
+}
+
+#calculate {
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 0.3rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-top: 1px solid #69ABC7;
+    padding: 0.6rem 0;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+#bmi span:last-child{
+    font-size: 0.775rem;
+}
+
+#description {
+    width: 15.5rem;
+}
+
+#more-info {
+    text-align: center;
+    border-top: 1px solid #69ABC7;
+    padding-top: 1.5rem;
+}
+
+#more-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-arrow-up-right-from-square{
+    padding-left: 0.5em;
+}
+
+#more-info a:hover {
+    color: #69ABC7;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
